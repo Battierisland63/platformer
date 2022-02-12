@@ -507,6 +507,9 @@ class Player{
                 case ".":
                     this.xv *= 10;
                     break;
+                case "q":
+                    this.gravity *= 0.5;
+                    break;
             }
         }
         if (event.key === "p"){
