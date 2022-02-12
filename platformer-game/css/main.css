@@ -23,10 +23,10 @@
     opacity:0.5;
 }
 .regular{
-    background-color:brown;
+    background-color:white;
 }
 .lava{
-    background-color:red;
+    background-color:blue;
 }
 .sign{
     background-color:tan;
@@ -68,7 +68,7 @@
     transform:translate(-50%,-50%);
 }
 .coin_text{
-    background-color:gold;
+    background-color:silver;
     border-radius:50%;
     padding:5px;
     display:inline-block;
@@ -85,7 +85,7 @@
     animation:coinrotate 2s infinite linear;
 }
 #player{
-    background-color:green;
+    background-color:black;
     position:absolute;
     text-align:center;
     z-index: -1 !important;
@@ -120,7 +120,7 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0px;
-    background-color: white;
+    background-color: lightsteelblue;
     z-index: 1 !important;
 }
 #menu{
@@ -155,7 +155,7 @@ body{
     transform: translateY(-50%);
 }
 #playbutton{
-    background-color: pink;
+    background-color: red;
     transition: background-color 2s;
     width: 200px;
     height: 100px;
@@ -176,5 +176,5 @@ body{
     grid-area: mobile;
 }
 .end{
-    background-color: green;
+    background-color: gold;
 }
