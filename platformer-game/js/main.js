@@ -446,7 +446,7 @@ class Player{
         this.x2 = rect.right;
         this.y2 = rect.bottom;
         // Developer mode stuff
-        this.lock = "ghc1";
+        this.lock = "fbiagent";
         this.checkPointNum = 0;
         this.cheat = {
             active: false,
