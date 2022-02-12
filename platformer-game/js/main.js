@@ -508,7 +508,7 @@ class Player{
                     this.xv *= 10;
                     break;
                 case "q":
-                    this.gravity *= 0.5;
+                    this.gravity *= 0.;
                     break;
             }
         }
