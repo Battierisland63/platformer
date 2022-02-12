@@ -29,7 +29,7 @@
     background-color:blue;
 }
 .sign{
-    background-color:tan;
+    background-color:midnightblue;
     overflow:visible;
     z-index: 10000 !important;
 }
@@ -85,7 +85,7 @@
     animation:coinrotate 2s infinite linear;
 }
 #player{
-    background-color:black;
+    background-color:sandybrown;
     position:absolute;
     text-align:center;
     z-index: -1 !important;
@@ -155,7 +155,7 @@ body{
     transform: translateY(-50%);
 }
 #playbutton{
-    background-color: red;
+    background-color: whitesmoke;
     transition: background-color 2s;
     width: 200px;
     height: 100px;
