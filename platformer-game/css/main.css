@@ -120,7 +120,8 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0px;
-    background-color: lightsteelblue;
+    background-image:linear-gradient
+(red, black);
     z-index: 1 !important;
 }
 #menu{
