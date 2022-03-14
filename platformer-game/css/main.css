@@ -120,7 +120,7 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0px;
-    background-image: linear-gradient(steelblue, hotpink);
+    background-image: linear-gradient(firebrick, black);
     z-index: 1 !important;
 }
 #menu{
