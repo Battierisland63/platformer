@@ -29,7 +29,7 @@
     background-color:blue;
 }
 .sign{
-    background-color:midnightblue;
+    background-color:deeppink;
     overflow:visible;
     z-index: 10000 !important;
 }
@@ -120,7 +120,7 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0px;
-    background-image: linear-gradient(steelblue, hotpink);
+    background-image: linear-gradient(black, firebrick);
     z-index: 1 !important;
 }
 #menu{
@@ -170,11 +170,11 @@ body{
     grid-area: playbutton;
 }
 #playbutton:hover{
-    background-color: grey;
+    background-color: dimgray;
 }
 #mobileOrNot{
     grid-area: mobile;
 }
 .end{
-    background-color: gold;
+    background-color: red;
 }

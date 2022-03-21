@@ -100,7 +100,7 @@ lfllllllllllllllllllllllllllllllllGffGlllllllllllllllllllllllllllll llllllllllll
  n               l  z   ccc     llllzclzc  c     lz    lz       lz lz  c  c  c  c  c r cǝ      l
  r lrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
 `
-var ethan_lvl=
+var DESTRUCTION=
 `
 
 
@@ -108,19 +108,19 @@ var ethan_lvl=
                                    r                   r            l
                                    r                   r            l
                                    r                   r            l
-                                   r                   r            l
-                                   r                   r            l
-                                   ree                 r            l
-                                   r rrrrrrrrrrrrrrrrrrr
-                                   r
+             C                     r                   r            l
+             C                     r                   r            l
+        rrrFFFFF                   ree                 r            l
+                                   r rrrrrrrrfffrrrrrrrr
+    rrrrr                          r
                                    rrrrrrrrrrrrrrrrrrrrrrrr    frrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr         rrrrffrrr c
-
-
+rrrr
+      rrrrr
                                                    rrrrrrrrr
-
-
+               rrr
+                  rrrrrrr
 l
-l                                                rrrr
+l                         rrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
 l                                                        rrrrr
 l          l
 l          l
@@ -169,7 +169,7 @@ rrrrrrrrrrrrrrrrrrrr
 
 
                                                          CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-                                                        rrrrrrrrrrrrrrrrrrlllllllrlllllrrrrr         CCCCCCCCCCCCCCCCCC
+                                                        rrrrrrrrFFFFrrrrrrlllllllrlllllrrrrr         CCCCCCCCCCCCCCCCCC
 iiiiiiiiiiiiii                              r       r                                                rrrrrrrrrrrrrrrrrr
                  cccccccccc       r
                  rrrrrrrrrr                                                                                                                         iiiiii
@@ -259,13 +259,13 @@ l                                         rlr                         r
 rrrrrrrrrrrrrrr rrrrrrrrrrrrrrrrrrrrrrrrrrlClr c c c                 sr
 r                                             rrrrrrrrrrrrrrrrrrrrrrrrr
 rc c c c c c c c c c C c C c C c C c C c C c
-rrrrrrrrrrrrrrrrrrrrrrrr rrrrrrrrrrrrrrrrrrrrrr
+rrrrrrrrrrrrrrrrrrrrrrr rrrrrrrrrrrrrrrrrrrrrr
 r                                             r r rrrrrrrrrrrrrrrrrrrrrrrrrrrr
 r                       C                     r r                            r
-r rrrrrrrrrrrrrrrrrrrrrr rrrrrrrrrrrrrrrrrrrr r r          rrrrr             r
+r rrrrrrrrrrrrrrrrrrrrrr FFFFrrrrrrrrrrrrrrrrr r r          rrrrr             r
 r                                               rrr rrrrrr r           r rrr rrrrrrrrrrrrrr
 r                                           c   r        r r     rrrrrrr r                r
-rrrrrrrrrrrrrrrrrrrrrrrlllrrrrrrrrrrrrrrrrrrrrrrrc      lr   rrrr        r                r
+rrrrrrrrrrrrrrrrrrrrrrrllllllrrrrrrrrrrrrrrrrrrrrc      lr   rrrr        r                r
                                             r    rrrrrr rr   r           r                r
                                             r         r rrrrrc    rrrrrrrrFFFFFFFFFFFFFFFFr
                                             rCCCCCCCCCCCr      r         r
@@ -320,6 +320,45 @@ r    r      l        ele        l       ele     l nr
 rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
 `
 
+var DEATH = `
+r
+r                                                                      r
+rrrrrrrrrrrr                                                            r
+r                                                                       rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr     r     r      r      r      rr      r
+r                                                                       rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+r                                                                      eeeeeeeeeeeeeeeeeeeeeeeeeeeeee  rr
+rrrrrrrrrrrrrrrrrrrrrr         rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr        rrrrrrrrrrrrrrrrrrr    r     r     r     r     r     r     r
+                                                                                                                                  rr
+                                                                                                                                 rr
+                                                                                                                                rrllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+                                                                                 rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+
+
+
+                                                       rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+                                                                                                                                                           r
+                                                                                                                                                           r
+                                                                                                                                                           F
+                                                                                                                                                           F
+                                                                                                                                                           F
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrlllllllrrrlllrllllrrrrrlllllrrr
+
+
+
+
+
+
+
+
+ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcccCCCCC
+ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+nCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+rrrrrrrrrrrrrrrrrrrrrrFFFFFrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+
+llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+`
+
 
 window.phase = 1; // Unlock new levels by doing a good job.
 window.levelsBeaten = 0; // Beat 2 levels to go to the next phase.
@@ -356,6 +395,10 @@ window.phases = [
         {
             id: 4,
             name: "The Basement"
+        },
+        {
+            id: 3,
+            name: "DESTRUCTION"
         }
     ]
 ];
@@ -446,7 +489,7 @@ class Player{
         this.x2 = rect.right;
         this.y2 = rect.bottom;
         // Developer mode stuff
-        this.lock = "ghc1";
+        this.lock = "zxcv";
         this.checkPointNum = 0;
         this.cheat = {
             active: false,
@@ -510,7 +553,10 @@ class Player{
                 case "q":
                     this.gravity *= 0.;
                     break;
-            }
+                    case "1":
+                        this.gravity = 1;
+                        break;
+            }16
         }
         if (event.key === "p"){
             alert("Paused. Click out of this alert box when you are ready to begin again.");
@@ -982,7 +1028,7 @@ document.getElementById("playbutton").addEventListener("click",function(){
             g.createByTileset(-3, -8, lvl1);
             break;
         case "3":
-            g.createByTileset(-4, -12, ethan_lvl);
+            g.createByTileset(-4, -12, DESTRUCTION);
             break;
         case "4":
             g.createByTileset(-3, -6, lvl2, ["You have a superpower. An extra jump! Slide off a platform without jumping and you can jump in mid-air to fly."]);
@@ -1000,6 +1046,10 @@ document.getElementById("playbutton").addEventListener("click",function(){
         case "8":
             g.createByTileset(-2, -5, fortress);
             break;
+        case "9":
+            g.createByTileset(0, 0, DEATH);
+            break;
+
     }
     document.getElementById("menu").style.display="none";
     Array.from(document.getElementsByClassName("tencoin")).forEach((item, i) => {
