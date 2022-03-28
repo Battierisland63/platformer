@@ -26,12 +26,18 @@
     background-color:white;
 }
 .lava{
-    background-color:blue;
+    background-color:red;
+}
+.ice{
+    background-color:skyblue;
 }
 .sign{
     background-color:deeppink;
     overflow:visible;
     z-index: 10000 !important;
+}
+.launchpad{
+  background-color: yellow;
 }
 .minigame{
     background-color:cyan;
@@ -176,5 +182,5 @@ body{
     grid-area: mobile;
 }
 .end{
-    background-color: red;
+    background-image: linear-gradient(pink, teal); ;
 }

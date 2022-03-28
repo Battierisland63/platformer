@@ -113,10 +113,11 @@ var DESTRUCTION=
         rrrFFFFF                   ree                 r            l
                                    r rrrrrrrrfffrrrrrrrr
     rrrrr                          r
+                                   r
                                    rrrrrrrrrrrrrrrrrrrrrrrr    frrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr         rrrrffrrr c
 rrrr
       rrrrr
-                                                   rrrrrrrrr
+                                                  rrrrrrrrr
                rrr
                   rrrrrrr
 l
@@ -288,26 +289,37 @@ var training = `
 r           s
 rrrrrrrrrrrrrllrrrr
                     ccccccccs
-                    rrrrrrrrr
+                    rrrrrrrrr       s
+rrrrrrrrrrrr                      rrryyyyyyyyy
+r
+rn
+rrrrrrrrrrrryy       rrrrrr        rrr       rrrrrrrrrrr
 
-                                r    e r   c
-                                rrrrrrrrrrrr    s  n
-                                                rrrrrrr
+
+
+lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
 `
 
 var tinymaze = `
-r                c
-r                r
-r                r              c
-r                r     e        r
-r                rvrrrrrrrrrvrrrr
-r    c                     r                     n
-r    r       e           vcr  c    lll      rrrrr
-rrrrrrrrrrrrrrvrrrrrrrrrrr rrrrrrrrrrr   e  r
-                                     rrrrrrrr
-        c       r          e  vcr
+ r                c
+ r                r
+ r                r              c
+ r                r     e        r
+ r                rvrrrrrrrrrvrrrr                                                           yyy
+ F    c                     r                     yyyyyyyy                                  rr    n
+uF    r       e           vcr  c    lll      rrrrr                                  rrrrrrrrrr
+rrrrrrrrrrrrrrrvrrrrrrrrrrr rrrrrrrrrrr   e  r             r                      r
+                                      rrrrrrrr            rCCC     e            vr
+        c       r          e  vcr                         rrrrrrrrrryyyrrrrrrrrrrr
         rrrrrrrrrrrrrrrrrrrrrrr r
                               rlr
+
+
+
+
+lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+
+
 `
 
 var fortress = `
@@ -553,9 +565,18 @@ class Player{
                 case "q":
                     this.gravity *= 0.;
                     break;
-                    case "1":
+                case "1":
                         this.gravity = 1;
                         break;
+                case "d":
+                        this.xv = 0;
+                        break;
+                case "2":
+                                this.xv = 1;
+                                break;
+                case "a":
+                      this.game.arbitraryRestructure();
+                    break;
             }16
         }
         if (event.key === "p"){
@@ -589,8 +610,13 @@ class Player{
             this.yv = -20 * this.gravity;
             this.onground = false;
         }
-        this.game.move(0,this.yv);
+        this.game.move(0,this.yv); // Y collisions
         colis=this.game.checkCollision();
+        this.touchingice = false;
+        if (colis["ice"] > 0){
+            this.touchingice = true;
+
+        }
         if (colis["tencoin"] > 0){
             this.score+=colis["tencoin"]*10;
             this.refreshscore();
@@ -616,7 +642,7 @@ class Player{
         else if (this.cheat.phaser == 2){
             this.cheat.phaser=0;
         }
-        this.game.move(this.xv,0);
+        this.game.move(this.xv,0); // X collisions
         var colis=this.game.checkCollision();
         if (colis["tencoin"] > 0){
             this.score+=colis["tencoin"]*10;
@@ -647,7 +673,25 @@ class Player{
         else if (this.cheat.phaser == 2){
             this.cheat.phaser=0;
         }
-        this.xv*=0.8;
+        if (this.touchingice){
+          this.xv *= .95;
+
+        }
+        else{
+          this.xv*=0.8;
+
+}
+
+
+
+///yv for physics y is up/down xv is left or right
+
+
+
+
+
+
+
         if (this.cheat.flying){
             this.yv *= 0.8
         }
@@ -734,52 +778,58 @@ class Game{
                 break;
             case "f":
                 this.createBrick(x, y, width, height, "lava", "notsolid");
-                break;
+                break;/// fake lava
             case "F":
                 this.createBrick(x, y, width, height, "regular", "notsolid");
-                break;
+                break;/// fake block
             case "i":
                 this.createBrick(x, y, width, height, "invisible", "solid");
-                break;
+                break;/// invisible regular
             case "I":
                 this.createBrick(x, y, width, height, "invisible", "killu");
-                break;
+                break;/// invisible lava
             case "G":
                 this.createBrick(x, y, width, height, "lava", "solid");
-                break;
+                break;/// lava
             case "e":
                 this.enemies.push([this.createBrick(x, y, width, height, "lava", "killu"), 5, 0]);
-                break;
+                break;/// moving lava
             case "ǝ":
                 this.enemies.push([this.createBrick(x, y, width, height, "lava", "killu"), -5, 0]);
-                break;
+                break;//moving lava
             case "z":
                 this.createBrick(x, y, width, height, "invisible", "elevator");
-                break;
+                break;///lauch lava
             case "Z":
                 this.createBrick(x, y, width, height, "invisible", "bigElevator");
-                break;
+                break;/// launch enemys
             case "v":
                 this.createBrick(x, y, width, height, "invisible", "notsolid");
-                break;
+                break;/// idk
             case "p":
                 this.createBrick(x, y, width, height, "regular", "solid", 0.1);
-                break;
+                break;///same with this
             case "P":
                 this.createBrick(x, y, width, height, "regular", "solid", 0.5);
-                break;
+                break;/// idk what this is yet
             case "d":
                 this.createBrick(x, y, width, height, "invisible", "enemyFlipperRight");
-                break;
+                break;///moving enemy stuff
             case "D":
                 this.createBrick(x, y, width, height, "invisible", "enemyFlipperLeft");
-                break;
+                break;///moving enemy stuff
             case "k":
                 this.checkPoints.push([x, y]);
-                break;
+                break;/// idk
             case "n":
                 this.createBrick(x, y, width, height, "end", "end");
-                break;
+                break;/// n for end
+                case "y":
+                    this.createBrick(x, y, width, height, "ice", "ice");
+                    break;/// y beacause nothing else i used worked
+                case "u":
+                        this.createBrick(x, y, width, height, "launchpad", "launchpad");
+                        break;// u is for launchpad
         }
     }
     createByTileset(x,y,tileset, signs){
@@ -856,6 +906,8 @@ class Game{
             "bigElevator":0,
             "end":0,
             "all":0,
+            "ice":0,
+            "launchpad":0,
         }; // Supported solidities: Solid, Notsolid, Killu
         var passers = 0;
         this.bricks.forEach((item, i) => {
@@ -890,6 +942,9 @@ class Game{
                     }
                     if (item.type == "end"){
                         this.win = true;
+                    }
+                    if (item.type == "ice"){
+                        dictionary["solid"] ++;
                     }
                 }
                 else if (!this.probPassers.includes(object)){
@@ -1040,7 +1095,7 @@ document.getElementById("playbutton").addEventListener("click",function(){
             g.createByTileset(-2, 0, tinymaze);
             break;
         case "7":
-            g.createByTileset(-2, 0, training, ["Look - lava! Sail over it with the 'up' and 'right' keys to avoid dying.", "As you can see, these are coins. Run into them to claim them, you'll notice you gain a score counter!<br /> The moving lava below you will hurt you just as bad as normal lava, so you should make sure to dodge it when you try to get the coin.", "That's the end of the level. Run into it to exit back to the main menu, you'll notice this level will be gone! Once you beat every level on the menu, you will advance to phase 2 and more will appear."])
+            g.createByTileset(-2, 0, training, ["Look - lava! Sail over it with the 'up' and 'right' keys to avoid dying.", "As you can see, these are coins. Run into them to claim them, you'll notice you gain a score counter!<br /> The moving lava below you will hurt you just as bad as normal lava, so you should make sure to dodge it when you try to get the coin.", "this is ice, it is still under development so pretend for now -DS"])
             g.createSign(1, 1, "Welcome to Platformer! This is a short, simple training level designed to get you on your feet.<br />What you have hovered is a sign. You should always hover them, they have useful information.<br />To start out, try moving the player with the left and right arrow keys", "Mouse Over Me")
             break;
         case "8":
