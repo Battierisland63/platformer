@@ -288,35 +288,34 @@ rrrrrrrrrrrrrrrrrrrrrrrllllllrrrrrrrrrrrrrrrrrrrrc      lr   rrrr        r      
 var training = `
 r           s
 rrrrrrrrrrrrrllrrrr
-                    ccccccccs
-                    rrrrrrrrr       s
-rrrrrrrrrrrr                      rrryyyyyyyyy
-r
-rn
-rrrrrrrrrrrryy       rrrrrr        rrr       rrrrrrrrrrr
-
-
-
-lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+r                    ccccccccs
+r                    rrrrrrrrr       s
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrryyyyyyyyy
+r           r                                             r
+rn          r                                             r
+rrrr   rrrrryy       rrrrrr        rrrr         rrrrrrrrrrr
+r                                      r    s
+r                                      ruuurr
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
 `
 
 var tinymaze = `
- r                c
- r                r
- r                r              c
- r                r     e        r
- r                rvrrrrrrrrrvrrrr                                                           yyy
- F    c                     r                     yyyyyyyy                                  rr    n
-uF    r       e           vcr  c    lll      rrrrr                                  rrrrrrrrrr
-rrrrrrrrrrrrrrrvrrrrrrrrrrr rrrrrrrrrrr   e  r             r                      r
-                                      rrrrrrrr            rCCC     e            vr
-        c       r          e  vcr                         rrrrrrrrrryyyrrrrrrrrrrr
-        rrrrrrrrrrrrrrrrrrrrrrr r
-                              rlr
-
-
-
-
+r                   c
+r                   r
+r  r                r              c
+r  r                r     e        r
+r  r                rvrrrrrrrrrvrrrr                                                           yyy
+r rr    c                     r                     yyyyyyyy                                  rr    n
+rurr    r       e           vcr  c    lll      rrrrr                                  rrrrrrrrrr
+rrrrrrrrrrrrrrrrvrrrrrrrrrrr rrrrrrrrrrr   e  r             r                      r
+rrr                                   rrrrrrrr            rCCC     e            vr
+        c         r       e  vcr                    rrrrrrrrrrrrrrryyyrrrrrrrrrrr
+        rrrrrrrrrrrrrrrrrrrrrrr r                rrrrrnr
+                              rlr              rrrrrrrrr
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+                                                                            rrrrrr
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
 lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
 
 
@@ -625,9 +624,17 @@ class Player{
             this.score+=colis["fiftycoin"]*50;
             this.refreshscore();
         }
+
+        if (colis["launchpad"] > 0){
+            this.yv = -25
+
+        }
+
         if (colis["solid"] > 0 || (colis["killu"] > 0 && this.cheat.invincible)){
             if (this.cheat.phaser == 1){
                 this.cheat.phaser = 2;
+
+
             }
             else if (this.cheat.phaser != 2){
                 while (this.game.checkCollision()["solid"] > 0){
@@ -1095,8 +1102,8 @@ document.getElementById("playbutton").addEventListener("click",function(){
             g.createByTileset(-2, 0, tinymaze);
             break;
         case "7":
-            g.createByTileset(-2, 0, training, ["Look - lava! Sail over it with the 'up' and 'right' keys to avoid dying.", "As you can see, these are coins. Run into them to claim them, you'll notice you gain a score counter!<br /> The moving lava below you will hurt you just as bad as normal lava, so you should make sure to dodge it when you try to get the coin.", "this is ice, it is still under development so pretend for now -DS"])
-            g.createSign(1, 1, "Welcome to Platformer! This is a short, simple training level designed to get you on your feet.<br />What you have hovered is a sign. You should always hover them, they have useful information.<br />To start out, try moving the player with the left and right arrow keys", "Mouse Over Me")
+            g.createByTileset(-2, 0, training, ["Look - lava! Sail over it with the 'up' and 'right' keys to avoid dying.", "As you can see, these are coins. Run into them to claim them, you'll notice you gain a score counter!<br /> The moving lava below you will hurt you just as bad as normal lava, so you should make sure to dodge it when you try to get the coin.", "this is ice i fixed it!!!"])
+            g.createSign(1, 1, "Welcome to Platformer! This is a short, simple training level designed to get you on your feet.<br />What you have hovered is a sign. You should always hover them, they have useful information.<br />To start out, try moving the player with the left and right arrow keys", "Mouse Over Me", "this is a jump block use it to hop up hit it at the right angle for it to fling you")
             break;
         case "8":
             g.createByTileset(-2, -5, fortress);
