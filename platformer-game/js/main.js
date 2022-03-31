@@ -296,8 +296,8 @@ rn          r                                             r
 rrrr   rrrrryy       rrrrrr        rrrr         rrrrrrrrrrr
 r                                      r   rs             r
 r                                      ruuurr             r
-rrrrrrrrrrrrrlllllrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
-rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
 `
 
 var tinymaze = `
