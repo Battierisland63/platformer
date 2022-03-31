@@ -126,7 +126,7 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0px;
-    background-image: linear-gradient(firebrick, black);
+    background-image: linear-gradient(deeppink, teal);
     z-index: 1 !important;
 }
 #menu{
