@@ -1102,8 +1102,8 @@ document.getElementById("playbutton").addEventListener("click",function(){
             g.createByTileset(-2, 0, tinymaze);
             break;
         case "7":
-            g.createByTileset(-2, 0, training, ["Look - lava! Sail over it with the 'up' and 'right' keys to avoid dying.", "As you can see, these are coins. Run into them to claim them, you'll notice you gain a score counter!<br /> The moving lava below you will hurt you just as bad as normal lava, so you should make sure to dodge it when you try to get the coin.", "this is ice i fixed it!!!"])
-            g.createSign(1, 1, "Welcome to Platformer! This is a short, simple training level designed to get you on your feet.<br />What you have hovered is a sign. You should always hover them, they have useful information.<br />To start out, try moving the player with the left and right arrow keys", "Mouse Over Me", "this is a jump block use it to hop up hit it at the right angle for it to fling you")
+            g.createByTileset(-2, 0, training, ["Look - lava! Sail over it with the 'up' and 'right' keys to avoid dying.", "As you can see, these are coins. Run into them to claim them, you'll notice you gain a score counter!<br /> The moving lava below you will hurt you just as bad as normal lava, so you should make sure to dodge it when you try to get the coin.", "this is ice i fixed it!!!","this is a jump block use it to hop up hit it at the right angle for it to fling you"])
+            g.createSign(1, 1, "Welcome to Platformer! This is a short, simple training level designed to get you on your feet.<br />What you have hovered is a sign. You should always hover them, they have useful information.<br />To start out, try moving the player with the left and right arrow keys", "Mouse Over Me", )
             break;
         case "8":
             g.createByTileset(-2, -5, fortress);
