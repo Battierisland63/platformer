@@ -126,7 +126,7 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0px;
-    background-image: linear-gradient(deeppink, teal);
+    background-image: url("youtubebanner.jpg");
     z-index: 1 !important;
 }
 #menu{
@@ -182,5 +182,5 @@ body{
     grid-area: mobile;
 }
 .end{
-    background-image: linear-gradient(pink, teal); ;
+    background-color: firebrick;
 }
