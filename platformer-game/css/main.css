@@ -23,7 +23,7 @@
     opacity:0.5;
 }
 .regular{
-    background-color:white;
+    background-color:gray;
 }
 .lava{
     background-color:red;
@@ -126,7 +126,7 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0px;
-    background-image: url("youtubebanner.jpg");
+    background-color: black;
     z-index: 1 !important;
 }
 #menu{
